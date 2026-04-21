@@ -1,4 +1,4 @@
-# gmail-client-code
+# gmailclient
 code to send an email using SMTP from Gmail.
 
 <p align="left">
