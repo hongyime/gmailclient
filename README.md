@@ -1,4 +1,8 @@
 # gmailclient
+
+
+![Project screenshot](./screenshot.png)
+
 code to send an email using SMTP from Gmail.
 
 <p align="left">
