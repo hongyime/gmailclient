@@ -1,0 +1,27 @@
+name: Gmail client checks
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.py', '.github/workflows/gmail-tests.yml']
+  pull_request:
+    paths: ['**.py', '.github/workflows/gmail-tests.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gmail-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Test using synthetic messages and a fake SMTP server
+        run: python -B -m unittest discover -s tests -v
