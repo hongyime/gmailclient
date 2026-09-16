@@ -1,0 +1,1 @@
+2026-09-16: Baseline review batch-a. Created .agents/ dir (previously missing). No open issues, one Dependabot PR (#56) pending. Code is stdlib-only 56-line CLI, clean error handling, no security findings. No fixes required.
