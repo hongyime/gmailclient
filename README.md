@@ -1,5 +1,8 @@
 # Gmail client
 
+**Live:** https://hongyime.github.io/gmailclient/
+
+![screenshot](./screenshot.png)
 Send one UTF-8 text file as an email through Gmail from an explicit Python command.
 The client uses Python's standard library and runs locally.
 
